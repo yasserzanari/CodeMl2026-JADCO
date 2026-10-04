@@ -1,0 +1,76 @@
+{
+  "title": "SCHL, offre en construction, contexte de la prévision 2026",
+  "accessed_at": "2026-10-04T03:22:47.866953+00:00",
+  "source_url": "https://assets.cmhc-schl.gc.ca/sites/cmhc/professional/housing-markets-data-and-research/market-reports/housing-supply-report/2025/housing-supply-report-2025-fall-en.pdf?rev=e2bdcf1d-e5d4-4310-a80c-b543872dcbbb",
+  "publication_date": "2025-09-09",
+  "publication_evidence_url": "https://www.cmhc-schl.gc.ca/media-newsroom/news-releases/2025/slowdown-toronto-vancouver-leave-national-housing-starts-flat-first-half-2025",
+  "vintage": "Fall 2025; downloaded now, not an independently timestamped 2025 local archive",
+  "licence_url": "https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/housing-data/cmhc-licence-agreement-use-of-data",
+  "attribution": "Adapted from Canada Mortgage and Housing Corporation, Housing Supply Report, Fall 2025. This does not constitute an endorsement by Canada Mortgage and Housing Corporation of this product.",
+  "conditions": [
+    "Attribute source and reference period; no implied endorsement",
+    "Do not remove rights of third parties; redistributed recipients must accept CMHC licence",
+    "No confidential challenge data present"
+  ],
+  "extraction": {
+    "method": "PyMuPDF text extraction and regex from appendix A4; numeric cells and headers visually verified against rendered PDF page31",
+    "pages_visually_checked": [
+      31
+    ],
+    "rows_stock": 88,
+    "source_tables": [
+      "Figure 8 / Appendix A4: purpose-built rental units under construction by Montreal CMA zone",
+      "Figure 9 / Appendix A4: units under construction by dwelling type, Ottawa CMA source label"
+    ]
+  },
+  "usage": {
+    "allowed": "Context available before 2025-12-31 for a 2026 forecast, with explicit source periods and tenure",
+    "not_supported": [
+      "No point-in-time historical vintages for cutoffs 2022,2023,2024: do not train or backtest these old values as historically available",
+      "Montreal stock is purpose-built rental; Ottawa stock includes all intended markets: no like-for-like rental comparison",
+      "Ottawa figure labels CMA but does not explicitly say Ontario part: do not merge with Ottawa Ontario series without geography evidence",
+      "Montreal historical month unspecified: keep source annual labels and mid-2025 wording, do not invent exact June dates",
+      "Under construction is a stock and not completions; there is no delivery calendar or lease-up rate",
+      "No validated improvement to central forecast or MAE"
+    ]
+  },
+  "sha256": {
+    "schl-offre-automne-2025.pdf": "bf19ba4e48608543eb71c4496cfce819e1d0fe83674a4e4b8e1e0514fd6ab816",
+    "schl-offre-stock-2025.csv": "b59a39e9a4e140542a9282e4670af4f1595dde8dd1fa7153229ddca7d053bbe1"
+  },
+  "delivered_files": [
+    "schl-offre-stock-2025.csv"
+  ],
+  "recommended_display": {
+    "geography": "Montreal CMA",
+    "dimension": [
+      "Island of Montreal",
+      "Laval"
+    ],
+    "reference_period": [
+      "2024",
+      "2025"
+    ],
+    "metric": "units_under_construction",
+    "intended_market": "purpose_built_rental",
+    "publication_date": "2025-09-09",
+    "vintage": "Fall 2025",
+    "note": "Four source values; exact dates of historic stock observations are not specified in figure. Preserve year labels."
+  },
+  "schema": {
+    "geography": "Source geography label; Ottawa Ontario not separately established",
+    "reference_period": "Source label, YYYY for Montreal or YYYY/Q1 for Ottawa",
+    "reference_period_precision": "Explicit source limitation; no invented exact observation date",
+    "metric": "units_under_construction",
+    "dimension": "Montreal zone or Ottawa dwelling type; do not compare across this distinction",
+    "intended_market": "purpose_built_rental or all_intended_markets_not_rental_specific",
+    "value": "Integer nonnegative dwelling count",
+    "unit": "dwelling_units",
+    "publication_date": "2025-09-09, source report publication date",
+    "vintage": "Fall 2025",
+    "pdf_page": "31 (one-based)",
+    "figure": "8 or9",
+    "eligible_usage": "descriptive_context_2026_only",
+    "source_url": "Official report download URL"
+  }
+}

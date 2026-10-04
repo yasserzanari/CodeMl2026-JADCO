@@ -1,0 +1,12 @@
+{
+  "source": "Statistique Canada",
+  "table": "18-10-0004-01",
+  "url": "https://www150.statcan.gc.ca/n1/tbl/csv/18100004-eng.zip",
+  "api_url": "https://www150.statcan.gc.ca/t1/wds/rest/getFullTableDownloadCSV/18100004/en",
+  "download_date": "2026-10-03",
+  "sha256": "3840c1810061b79035a9153dbc9189fed4ced6aaacdeddb86b13579b51f1c6d2",
+  "file": "statcan-18100004-en.zip",
+  "vintage": "table actuelle téléchargée 2026-10-03; archives historiques non disponibles",
+  "public_slice_sha256": "2a87386c77ede4aa76eb40b03ba191e1245f28a4d160b21fcf0d8adfa7735403",
+  "selection": "Rent; Quebec/Ontario; novembre 2017-2025; valeurs inchangées"
+}
