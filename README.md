@@ -1,19 +1,21 @@
-# CodeMl2026-JADCO
+# JADCO — code d’analyse
 
-Résolution du défi JADCO de collecte du solde CRM.
+Ce dépôt contient le code méthodologique du projet JADCO, extrait et adapté du notebook de travail. Les fonctions d’appariement à unité constante, d’estimation 2026 et de backtest sont fournies sans données d’entrée, sorties de notebook, graphiques ni résultats empiriques.
 
-## Objectif
+## Confidentialité et utilisation
 
-Documenter la méthode d’extraction, le rapprochement des transactions, le calcul du solde et les contrôles de validation selon les règles officielles.
+Les fichiers CRM et toutes les données fournies par le défi doivent rester dans un emplacement local autorisé. Ce dépôt ne contient aucun fichier de données. N’y ajoutez pas de sorties calculées, tableaux, graphiques, captures ou présentations dérivés de ces données. Le module renvoie les résultats à l’appelant : gardez-les dans l’environnement privé du projet.
 
-## Organisation du dépôt
+## Méthode dans le code
 
-Le dépôt est un point de départ. Le code, les instructions de reproduction et les décisions de conception seront ajoutés après revue des fichiers de travail et des règles du défi.
+`jadco_analysis.py` apparie les baux consécutifs par `sPropCode` + `sUnitCode`, filtre les écarts de durée configurés, calcule les croissances contractuelles et effectives, construit une prévision à partir des baux connus à la date de coupure et compare séparément cette prévision à la cible observée. `estimate_2026()` et `backtest()` sont des interfaces réutilisables; elles ne chargent ni n’écrivent de fichiers.
 
-## Données et confidentialité
+La méthode et ses paramètres sont explicités dans le code. Le résultat d’un backtest dépend de la définition de disponibilité des champs historiques, des données fournies à l’appel et de la configuration choisie. Une exécution sans les données CRM autorisées n’est pas incluse dans ce dépôt.
 
-Ne jamais committer les exports CRM, identifiants, données de transactions, secrets ou fichiers participants. Les règles officielles du défi déterminent ce qui peut être partagé. Ajouter uniquement des données explicitement autorisées; privilégier des exemples synthétiques et des scripts qui téléchargent les données depuis leur emplacement approuvé.
+## Environnement
 
-## Reproduction
+Python 3.10 ou ultérieur avec `pandas` et `numpy`. Les données `asking` et `external` sont fournies séparément par l’appelant avec les colonnes requises par le moteur. Ne placez pas les entrées ou résultats dans ce dépôt.
 
-À compléter lorsque l’environnement et les commandes de lancement auront été vérifiés.
+## Références
+
+Le code est dérivé du notebook de travail JADCO et des consignes du défi. Les sources publiques utilisées par l’analyse complète sont documentées dans l’espace privé de remise; aucune série dérivée n’est republiée ici.
