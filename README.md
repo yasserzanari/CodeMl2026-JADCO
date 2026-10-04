@@ -1,21 +1,17 @@
 # JADCO — code d’analyse
 
-Ce dépôt contient le code méthodologique du projet JADCO, extrait et adapté du notebook de travail. Les fonctions d’appariement à unité constante, d’estimation 2026 et de backtest sont fournies sans données d’entrée, sorties de notebook, graphiques ni résultats empiriques.
+Ce dépôt contient une version partageable du code méthodologique JADCO. Le notebook [jadco_analysis.ipynb](jadco_analysis.ipynb) et le module [jadco_analysis.py](jadco_analysis.py) fournissent les fonctions d’appariement à unité constante, d’estimation 2026 et de backtest.
 
-## Confidentialité et utilisation
+## Portée de cette version
 
-Les fichiers CRM et toutes les données fournies par le défi doivent rester dans un emplacement local autorisé. Ce dépôt ne contient aucun fichier de données. N’y ajoutez pas de sorties calculées, tableaux, graphiques, captures ou présentations dérivés de ces données. Le module renvoie les résultats à l’appelant : gardez-les dans l’environnement privé du projet.
+Le notebook contient le code source sans données d’entrée ni sorties exécutées. Il ne s’agit pas du notebook de résultats complet remis au jury. Les CSV CRM, les graphiques, les tableaux et les résultats dérivés restent dans l’environnement privé autorisé et ne sont pas inclus dans cette branche.
 
-## Méthode dans le code
+## Exécution locale
 
-`jadco_analysis.py` apparie les baux consécutifs par `sPropCode` + `sUnitCode`, filtre les écarts de durée configurés, calcule les croissances contractuelles et effectives, construit une prévision à partir des baux connus à la date de coupure et compare séparément cette prévision à la cible observée. `estimate_2026()` et `backtest()` sont des interfaces réutilisables; elles ne chargent ni n’écrivent de fichiers.
+Python 3.10 ou ultérieur avec les dépendances de `requirements.txt`. Chargez les tables autorisées dans votre environnement privé, puis fournissez-les aux interfaces `estimate_2026(leases, asking, external=None)` et `backtest(leases, asking, target_year, external=None)`. Le code ne charge ni n’enregistre de fichiers. Gardez les entrées et résultats hors du dépôt.
 
-La méthode et ses paramètres sont explicités dans le code. Le résultat d’un backtest dépend de la définition de disponibilité des champs historiques, des données fournies à l’appel et de la configuration choisie. Une exécution sans les données CRM autorisées n’est pas incluse dans ce dépôt.
+## Méthode
 
-## Environnement
+Les transitions sont appariées par `sPropCode` + `sUnitCode`. Le code calcule séparément les variations contractuelles et effectives; le moteur construit la prévision à partir de l’historique disponible à la coupure et compare la prévision à l’observation dans une étape distincte. Les hypothèses de disponibilité des données et les limites du backtest doivent être considérées lors de l’interprétation.
 
-Python 3.10 ou ultérieur avec `pandas` et `numpy`. Les données `asking` et `external` sont fournies séparément par l’appelant avec les colonnes requises par le moteur. Ne placez pas les entrées ou résultats dans ce dépôt.
-
-## Références
-
-Le code est dérivé du notebook de travail JADCO et des consignes du défi. Les sources publiques utilisées par l’analyse complète sont documentées dans l’espace privé de remise; aucune série dérivée n’est republiée ici.
+Le code est dérivé du notebook de travail JADCO. Les sources publiques utilisées par l’analyse complète sont documentées dans la remise privée.
