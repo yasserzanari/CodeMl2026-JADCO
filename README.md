@@ -1,17 +1,19 @@
-# JADCO — code d’analyse
+# JADCO — notebook d’analyse
 
-Ce dépôt contient une version partageable du code méthodologique JADCO. Le notebook [jadco_analysis.ipynb](jadco_analysis.ipynb) et le module [jadco_analysis.py](jadco_analysis.py) fournissent les fonctions d’appariement à unité constante, d’estimation 2026 et de backtest.
+## Livrable principal
 
-## Portée de cette version
+`jadco-final.ipynb` est l’unique notebook du dépôt et le livrable principal de l’analyse. Il est adapté du notebook de départ `starter.ipynb` et contient les étapes de préparation, les hypothèses, les fonctions `estimate_2026()` et `backtest()`, ainsi que les références méthodologiques.
 
-Le notebook contient le code source sans données d’entrée ni sorties exécutées. Il ne s’agit pas du notebook de résultats complet remis au jury. Les CSV CRM, les graphiques, les tableaux et les résultats dérivés restent dans l’environnement privé autorisé et ne sont pas inclus dans cette branche.
+`jadco_analysis.py` est un module auxiliaire réutilisable; ce n’est pas un second livrable Jupyter.
 
-## Exécution locale
+## Exécution
 
-Python 3.10 ou ultérieur avec les dépendances de `requirements.txt`. Chargez les tables autorisées dans votre environnement privé, puis fournissez-les aux interfaces `estimate_2026(leases, asking, external=None)` et `backtest(leases, asking, target_year, external=None)`. Le code ne charge ni n’enregistre de fichiers. Gardez les entrées et résultats hors du dépôt.
+Python 3.10 ou ultérieur avec les dépendances de `requirements.txt`. Ouvrez `jadco-final.ipynb` dans Jupyter et exécutez les cellules dans l’ordre. Les quatre CSV autorisés doivent être fournis localement dans `entrees-locales/` ou via la variable `JADCO_INPUT_DIR`. Aucune donnée CRM du défi n’est incluse dans ce dépôt. Les sources publiques requises par les sections correspondantes doivent également être disponibles sous `externes/`.
 
-## Méthode
+Les sorties, graphiques et exports créés pendant l’exécution peuvent révéler des résultats dérivés des données privées. Gardez-les dans l’environnement autorisé et effacez les sorties avant de committer le notebook. Cette branche ne publie ni les résultats empiriques ni les fichiers CRM.
 
-Les transitions sont appariées par `sPropCode` + `sUnitCode`. Le code calcule séparément les variations contractuelles et effectives; le moteur construit la prévision à partir de l’historique disponible à la coupure et compare la prévision à l’observation dans une étape distincte. Les hypothèses de disponibilité des données et les limites du backtest doivent être considérées lors de l’interprétation.
+## Portée
 
-Le code est dérivé du notebook de travail JADCO. Les sources publiques utilisées par l’analyse complète sont documentées dans la remise privée.
+Le notebook contient le code d’estimation et de backtest, mais n’est pas livré avec les résultats calculés sur les données privées. Aucun modèle entraîné n’est utilisé. La présentation du jury n’est pas incluse dans cette branche.
+
+Les sources publiques, règles réglementaires et outil d’IA utilisé sont référencés à la fin du notebook.
