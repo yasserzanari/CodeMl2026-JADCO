@@ -1,0 +1,139 @@
+{
+  "sources": [
+    {
+      "year": 2021,
+      "city": "montreal",
+      "url": "https://assets.cmhc-schl.gc.ca/sites/cmhc/professional/housing-markets-data-and-research/housing-data-tables/rental-market/rental-market-report-data-tables/2021/rmr-montreal-2021-en.xlsx",
+      "file": "rmr-montreal-2021-en.xlsx",
+      "sha256": "b93e0d6ee07a62701f3cdd7e5564fbfe89551ebc0f81f2b6f2bd30e6b611e773",
+      "publication": "2022-02-18",
+      "publication_source": "https://www.cmhc-schl.gc.ca/observer/2022/rental-affordability-continues-pose-significant-challenges",
+      "workbook_created": "2021-11-30 17:30:58",
+      "workbook_modified": "2022-02-14 19:40:14",
+      "downloaded_utc": "2026-10-04",
+      "geography_census": 2016,
+      "vintage_caveat": "Edition historique officielle téléchargée en 2026, non capture cryptographique à la date de diffusion. Modifications silencieuses non exclues."
+    },
+    {
+      "year": 2021,
+      "city": "ottawa",
+      "url": "https://assets.cmhc-schl.gc.ca/sites/cmhc/professional/housing-markets-data-and-research/housing-data-tables/rental-market/rental-market-report-data-tables/2021/rmr-ottawa-2021-en.xlsx",
+      "file": "rmr-ottawa-2021-en.xlsx",
+      "sha256": "27a1163b9171e1a6bab277f69186098e3f80e6b55439aa9fa901932bc47dfecc",
+      "publication": "2022-02-18",
+      "publication_source": "https://www.cmhc-schl.gc.ca/observer/2022/rental-affordability-continues-pose-significant-challenges",
+      "workbook_created": "2021-11-30 19:45:45",
+      "workbook_modified": "2021-11-30 19:48:06",
+      "downloaded_utc": "2026-10-04",
+      "geography_census": 2016,
+      "vintage_caveat": "Edition historique officielle téléchargée en 2026, non capture cryptographique à la date de diffusion. Modifications silencieuses non exclues."
+    },
+    {
+      "year": 2022,
+      "city": "montreal",
+      "url": "https://assets.cmhc-schl.gc.ca/sites/cmhc/professional/housing-markets-data-and-research/housing-data-tables/rental-market/rental-market-report-data-tables/2022/rmr-montreal-2022-en.xlsx",
+      "file": "rmr-montreal-2022-en.xlsx",
+      "sha256": "bcc5bc3ed583ad5810652aa9b8cbeff3a2c9ba1b8d59546b81d59f34901295ef",
+      "publication": "2023-01-26",
+      "publication_source": "https://www.cmhc-schl.gc.ca/observer/2023/rental-supply-increases-but-demand-surges",
+      "workbook_created": "2022-11-23 20:30:51",
+      "workbook_modified": "2022-11-30 22:54:53",
+      "downloaded_utc": "2026-10-04",
+      "geography_census": 2016,
+      "vintage_caveat": "Edition historique officielle téléchargée en 2026, non capture cryptographique à la date de diffusion. Modifications silencieuses non exclues."
+    },
+    {
+      "year": 2022,
+      "city": "ottawa",
+      "url": "https://assets.cmhc-schl.gc.ca/sites/cmhc/professional/housing-markets-data-and-research/housing-data-tables/rental-market/rental-market-report-data-tables/2022/rmr-ottawa-2022-en.xlsx",
+      "file": "rmr-ottawa-2022-en.xlsx",
+      "sha256": "366437e12c0748c7a311a1768b7ef82ee3ecc1eddd19080d875528c6fa247fcc",
+      "publication": "2023-01-26",
+      "publication_source": "https://www.cmhc-schl.gc.ca/observer/2023/rental-supply-increases-but-demand-surges",
+      "workbook_created": "2022-11-23 20:37:10",
+      "workbook_modified": "2022-11-30 23:44:37",
+      "downloaded_utc": "2026-10-04",
+      "geography_census": 2016,
+      "vintage_caveat": "Edition historique officielle téléchargée en 2026, non capture cryptographique à la date de diffusion. Modifications silencieuses non exclues."
+    },
+    {
+      "year": 2023,
+      "city": "montreal",
+      "url": "https://assets.cmhc-schl.gc.ca/sites/cmhc/professional/housing-markets-data-and-research/housing-data-tables/rental-market/rental-market-report-data-tables/2023/rmr-montreal-2023-en.xlsx",
+      "file": "rmr-montreal-2023-en.xlsx",
+      "sha256": "211bc32b1ef62a2194b5b0dd5175daf304f0a411f6c139fa98e55d8862ad5534",
+      "publication": "2024-01-31",
+      "publication_source": "https://www.cmhc-schl.gc.ca/media-newsroom/news-releases/2024/canadas-vacancy-rate-reaches-new-low-demand-outpaces-supply",
+      "workbook_created": "2024-01-05 19:24:39",
+      "workbook_modified": "2024-01-05 19:26:35",
+      "downloaded_utc": "2026-10-04",
+      "geography_census": 2021,
+      "vintage_caveat": "Edition historique officielle téléchargée en 2026, non capture cryptographique à la date de diffusion. Modifications silencieuses non exclues."
+    },
+    {
+      "year": 2023,
+      "city": "ottawa",
+      "url": "https://assets.cmhc-schl.gc.ca/sites/cmhc/professional/housing-markets-data-and-research/housing-data-tables/rental-market/rental-market-report-data-tables/2023/rmr-ottawa-2023-en.xlsx",
+      "file": "rmr-ottawa-2023-en.xlsx",
+      "sha256": "107e5d74c09928d1c9860c7b44fd88327dfda991795ee49e780dae8c78ec20cd",
+      "publication": "2024-01-31",
+      "publication_source": "https://www.cmhc-schl.gc.ca/media-newsroom/news-releases/2024/canadas-vacancy-rate-reaches-new-low-demand-outpaces-supply",
+      "workbook_created": "2024-01-05 19:29:45",
+      "workbook_modified": "2024-01-05 19:30:46",
+      "downloaded_utc": "2026-10-04",
+      "geography_census": 2021,
+      "vintage_caveat": "Edition historique officielle téléchargée en 2026, non capture cryptographique à la date de diffusion. Modifications silencieuses non exclues."
+    },
+    {
+      "year": 2024,
+      "city": "montreal",
+      "url": "https://assets.cmhc-schl.gc.ca/sites/cmhc/professional/housing-markets-data-and-research/housing-data-tables/rental-market/rental-market-report-data-tables/2024/rmr-montreal-2024-en.xlsx",
+      "file": "rmr-montreal-2024-en.xlsx",
+      "sha256": "a0a34798d4738d240c7ce20e8f222bf49a9908dd47960a4492610c1c2c9967c5",
+      "publication": "2024-12-17",
+      "publication_source": "https://www.cmhc-schl.gc.ca/media-newsroom/news-releases/2024/historic-rental-supply-growth-raises-canada-vacancy-rate",
+      "workbook_created": "2024-11-23 18:16:05",
+      "workbook_modified": "2024-11-23 20:02:51",
+      "downloaded_utc": "2026-10-04",
+      "geography_census": 2021,
+      "vintage_caveat": "Edition historique officielle téléchargée en 2026, non capture cryptographique à la date de diffusion. Modifications silencieuses non exclues."
+    },
+    {
+      "year": 2024,
+      "city": "ottawa",
+      "url": "https://assets.cmhc-schl.gc.ca/sites/cmhc/professional/housing-markets-data-and-research/housing-data-tables/rental-market/rental-market-report-data-tables/2024/rmr-ottawa-2024-en.xlsx",
+      "file": "rmr-ottawa-2024-en.xlsx",
+      "sha256": "61fac09db0389ddc3e0be29d91d115d30fb2ffc7fd25f4cd6a3d6fde0447ec17",
+      "publication": "2024-12-17",
+      "publication_source": "https://www.cmhc-schl.gc.ca/media-newsroom/news-releases/2024/historic-rental-supply-growth-raises-canada-vacancy-rate",
+      "workbook_created": "2024-11-23 18:27:07",
+      "workbook_modified": "2024-11-23 20:02:57",
+      "downloaded_utc": "2026-10-04",
+      "geography_census": 2021,
+      "vintage_caveat": "Edition historique officielle téléchargée en 2026, non capture cryptographique à la date de diffusion. Modifications silencieuses non exclues."
+    }
+  ],
+  "rows": 160,
+  "original_rows": 80,
+  "revision_differences": 7,
+  "availability_rows": 60,
+  "license": "https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/housing-data/cmhc-licence-agreement-use-of-data",
+  "notice": "Adapted from Canada Mortgage and Housing Corporation, Rental Market Survey data tables, October 2021–2024. This does not constitute an endorsement by Canada Mortgage and Housing Corporation of this product.",
+  "warning": "Aucun gain prédictif évalué. Distinguer moyenne SCHL et médiane effective JADCO; turnover SCHL sur parc occupé et part de relocations parmi transitions JADCO.",
+  "reports": [
+    {
+      "edition": 2022,
+      "filename": "rapport-2022.pdf",
+      "sha256": "38d2e1a9dfe2f5297d0089a7f71720b008c97b9d5667482e3fe565d7930c8041",
+      "url": "https://assets.cmhc-schl.gc.ca/sites/cmhc/professional/housing-markets-data-and-research/market-reports/rental-market-report/rental-market-report-2022-en.pdf",
+      "geography_note_page": 148
+    },
+    {
+      "edition": 2023,
+      "filename": "rapport-2023.pdf",
+      "sha256": "cc710187bbf86957312af82579371c6d0acc998057ce227a3cc2ca9515a3da1f",
+      "url": "https://assets.cmhc-schl.gc.ca/sites/cmhc/professional/housing-markets-data-and-research/market-reports/rental-market-report/rental-market-report-2023-en.pdf",
+      "geography_note_page": 123
+    }
+  ]
+}

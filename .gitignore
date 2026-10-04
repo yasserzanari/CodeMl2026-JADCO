@@ -1,23 +1,45 @@
-# Secrets et configuration locale
-.env
-.env.*
-!.env.example
-*.pem
-*.key
+# This public worktree is an allowlist: all additions require an explicit review.
+/*
+!/README.md
+!/SOURCES.md
+!/PRESENTATION.md
+!/jadco-final.ipynb
+!/requirements.txt
+!/externes/
 
-# Données et documents de défi: utiliser les copies locales autorisées uniquement
-/data/raw/
-/data/private/
-/data/source/
-/datasets/
+# Only the listed public, cited source extracts are tracked.
+/externes/*
+!/externes/schl-contexte-2025.csv
+!/externes/schl-historique-2021-2024.csv
+!/externes/schl-historique-provenance.json
+!/externes/schl-offre-stock-2025.csv
+!/externes/schl-offre-provenance.json
+!/externes/statcan-rent-november-source.csv
+!/externes/statcan-source-metadata.json
+
+# Never add CRM files, executed outputs, models, caches, or local environments.
+*.zip
+equinoxe_*.csv
+*.joblib
+*.pkl
+*.pickle
 *.sqlite
 *.db
-
-# Artefacts locaux
+*.pdf
+*.pptx
+*.png
+*.jpg
+*.jpeg
+*.html
+*.log
 __pycache__/
-*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
 .venv/
 venv/
-node_modules/
-.DS_Store
-Thumbs.db
+.env
+.env.*
+!/.env.example
+resultats-agreges.json
+parametres.json
+ipc-signaux.csv
