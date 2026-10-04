@@ -1,18 +1,17 @@
-# Notebook public — usage et périmètre
+# JADCO — code d’analyse
 
-`jadco-final.ipynb` est le notebook principal du projet JADCO, dérivé de `starter.ipynb`. Il contient le code de préparation, `estimate_2026()` et `backtest()` ainsi que la méthode et ses hypothèses. Les sorties du notebook ont été effacées pour cette copie publique.
+Ce dépôt contient une version partageable du code méthodologique JADCO. Le notebook [jadco_analysis.ipynb](jadco_analysis.ipynb) et le module [jadco_analysis.py](jadco_analysis.py) fournissent les fonctions d’appariement à unité constante, d’estimation 2026 et de backtest.
 
-## Données et exécution
+## Portée de cette version
 
-Les fichiers CRM du défi ne sont pas inclus et ne doivent pas être publiés. Pour exécuter l'analyse, placez les quatre CSV autorisés dans `entrees-locales/` ou définissez `JADCO_INPUT_DIR` vers leur emplacement local. Les sources publiques externes utilisées par le notebook doivent être disponibles dans `externes/`. Ouvrez le fichier dans Jupyter et exécutez les cellules dans l'ordre.
+Le notebook contient le code source sans données d’entrée ni sorties exécutées. Il ne s’agit pas du notebook de résultats complet remis au jury. Les CSV CRM, les graphiques, les tableaux et les résultats dérivés restent dans l’environnement privé autorisé et ne sont pas inclus dans cette branche.
 
-Les calculs et graphiques produits à l'exécution peuvent révéler des résultats dérivés des données privées. Gardez les sorties, graphiques et exports dans l'environnement autorisé; effacez les sorties avant de committer le notebook. Aucun modèle entraîné n'est utilisé dans cette version.
+## Exécution locale
 
-## Environnement
+Python 3.10 ou ultérieur avec les dépendances de `requirements.txt`. Chargez les tables autorisées dans votre environnement privé, puis fournissez-les aux interfaces `estimate_2026(leases, asking, external=None)` et `backtest(leases, asking, target_year, external=None)`. Le code ne charge ni n’enregistre de fichiers. Gardez les entrées et résultats hors du dépôt.
 
-Python 3 avec les dépendances indiquées dans `requirements.txt` (`numpy`, `pandas`). Le notebook utilise aussi Matplotlib et Jupyter/IPython. Le module `jadco_analysis.py` fournit séparément des fonctions réutilisables sans chargement de fichiers.
+## Méthode
 
-## Références et outils
+Les transitions sont appariées par `sPropCode` + `sUnitCode`. Le code calcule séparément les variations contractuelles et effectives; le moteur construit la prévision à partir de l’historique disponible à la coupure et compare la prévision à l’observation dans une étape distincte. Les hypothèses de disponibilité des données et les limites du backtest doivent être considérées lors de l’interprétation.
 
-Les sources publiques et les limites réglementaires sont référencées à la fin du notebook. Assistance IA : OpenAI Codex pour le code, l'audit et la rédaction.
-
+Le code est dérivé du notebook de travail JADCO. Les sources publiques utilisées par l’analyse complète sont documentées dans la remise privée.
